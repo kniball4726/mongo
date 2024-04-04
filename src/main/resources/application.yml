@@ -1,0 +1,5 @@
+spring:
+    data:
+        mongodb:
+            uri: mongodb+srv://GregoryRodriguez:nSioUY0qfN2mwWs2@pedidos.hmkejkm.mongodb.net/?retryWrites=true&w=majority&appName=Pedidos
+            database: Pedidos
