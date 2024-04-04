@@ -16,7 +16,7 @@ public class Pedidos {
     private String fentrega;
     private String fdescuento;
     private String direccion;
-    
+
     public Pedidos(int id, int orden, String cliente, int bultos, int numeroped, String preparador, String fprepara,
             String fentrega, String fdescuento, String direccion) {
         this.id = id;
@@ -111,5 +111,4 @@ public class Pedidos {
         this.direccion = direccion;
     }
 
-    
 }
