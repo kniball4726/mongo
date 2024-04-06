@@ -1,10 +1,16 @@
 package com.websup.mongo.Documents;
 
+import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.*;
 
+@Data
+@ToString
 @Document(collection = "Pedidos")
-public class Pedidos {
+public class Pedidos implements Serializable{
+
     @Id
     private int id;
     private int orden;
@@ -31,84 +37,7 @@ public class Pedidos {
         this.direccion = direccion;
     }
 
-    public int getId() {
-        return id;
-    }
+    public Pedidos (){
 
-    public void setId(int id) {
-        this.id = id;
     }
-
-    public int getOrden() {
-        return orden;
-    }
-
-    public void setOrden(int orden) {
-        this.orden = orden;
-    }
-
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
-    }
-
-    public int getBultos() {
-        return bultos;
-    }
-
-    public void setBultos(int bultos) {
-        this.bultos = bultos;
-    }
-
-    public int getNumeroped() {
-        return numeroped;
-    }
-
-    public void setNumeroped(int numeroped) {
-        this.numeroped = numeroped;
-    }
-
-    public String getPreparador() {
-        return preparador;
-    }
-
-    public void setPreparador(String preparador) {
-        this.preparador = preparador;
-    }
-
-    public String getFprepara() {
-        return fprepara;
-    }
-
-    public void setFprepara(String fprepara) {
-        this.fprepara = fprepara;
-    }
-
-    public String getFentrega() {
-        return fentrega;
-    }
-
-    public void setFentrega(String fentrega) {
-        this.fentrega = fentrega;
-    }
-
-    public String getFdescuento() {
-        return fdescuento;
-    }
-
-    public void setFdescuento(String fdescuento) {
-        this.fdescuento = fdescuento;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
 }

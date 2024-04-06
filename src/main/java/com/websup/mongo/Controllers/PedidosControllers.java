@@ -20,7 +20,7 @@ public class PedidosControllers {
     @Autowired
     private PedidosRepository pedidosRepo;
 
-    @GetMapping(value = "/all")
+    @GetMapping(value = "/pedidos")
     public List<Pedidos> getAll() {
         return pedidosRepo.findAll();
     }
